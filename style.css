@@ -1,0 +1,62 @@
+.container {
+  width: 500px;
+  height: 600px;
+  border: 3px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.decibelmeter {
+  height: 5px;
+  width: 500px;
+  position: absolute;
+  bottom: 0;
+  background-color: #241108;
+  z-index: -1;
+}
+
+.dropArea {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-start {
+  font-size: 20px;
+}
+
+.btn-remove {
+  display: none;
+}
+
+.food-image {
+  width: 145px;
+  display: block;
+  margin: 35px auto;
+}
+
+.food-image.animate {
+  animation: imageAnimation 4s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}

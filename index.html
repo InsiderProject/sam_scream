@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sam Scream</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Scream!</h1>
+      
+      <div class="dropArea" id="dropArea">
+        <p>Drag & Drop here</p>
+        <input type="file" id="imageInput" accept="">
+      </div>
+      
+      <img src="./img/Burger.png" alt="food.png" class="food-image" />
+      <button class="btn-remove" id="removeImageBtn">Remove Image</button>
+
+      <div class="decibelmeter"></div>
+    </div>
+
+    <button class="btn-start">Start</button>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
