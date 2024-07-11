@@ -1,22 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  width: 500px;
-  height: 600px;
-  border: 3px solid black;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  border: 3px solid black;
 }
 
 .title {
-  font-size: 50px;
-  margin-top: 50px;
+  font-size: 10em;
+  text-align: center;
 }
 
 .decibelmeter {
   height: 5px;
-  width: 500px;
+  width: 100%;
   position: absolute;
   bottom: 0;
   background-color: #241108;
@@ -24,7 +31,8 @@
 }
 
 .dropArea {
-  width: 300px;
+  width: 80%;
+  max-width: 500px;
   height: 200px;
   border: 2px dashed #ccc;
   display: flex;
@@ -35,7 +43,9 @@
 }
 
 .btn-start {
-  font-size: 20px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px 0;
 }
 
 .btn-remove {
@@ -43,9 +53,9 @@
 }
 
 .food-image {
-  width: 145px;
-  display: block;
-  margin: 35px auto;
+  display: none;
+  width: 100px;
+  margin: 20px auto;
 }
 
 .food-image.animate {
@@ -58,5 +68,37 @@
   }
   50% {
     transform: scale(1.3);
+  }
+}
+
+.sensitivity-container {
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .food-image {
+    width: 200px;
+  }
+
+  .btn-start {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 4em;
+  }
+
+  .food-image {
+    width: 300px;
+  }
+
+  .btn-start {
+    font-size: 2em;
   }
 }

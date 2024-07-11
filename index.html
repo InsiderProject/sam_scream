@@ -9,19 +9,23 @@
   <body>
     <div class="container">
       <h1 class="title">Scream!</h1>
-      
+
       <div class="dropArea" id="dropArea">
         <p>Drag & Drop here</p>
-        <input type="file" id="imageInput" accept="">
+        <input type="file" id="imageInput" accept="" />
       </div>
-      
+
       <img src="./img/Burger.png" alt="food.png" class="food-image" />
       <button class="btn-remove" id="removeImageBtn">Remove Image</button>
 
+      <button class="btn-start">Start</button>
+      <div class="sensitivity-container">
+        <label for="sensitivity">Sensitivity: </label>
+        <input type="range" id="sensitivity" min="1" max="10" value="2" />
+      </div>
+
       <div class="decibelmeter"></div>
     </div>
-
-    <button class="btn-start">Start</button>
 
     <script src="main.js"></script>
   </body>
