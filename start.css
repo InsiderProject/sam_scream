@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    background-color: #ff0000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scream_font {
+    width: 100%;
+}
+
+.scream_logo {
+    width: 50%;
+}
+
+  /* Button styles */
+button {
+    background-color: #33ccff;
+    border: none;
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    /* Add max-width to prevent button from getting too large */
+    max-width: 200px;
+    width: 40%;
+    margin-bottom: 5vh;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+  /* Pulse effect */
+button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.1);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+  /* Hover effect */
+button:hover {
+    animation: none;
+    transform: scale(1.2);
+    background-color: #44bbff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s, box-shadow 0.3s;
+}
+
+  /* Touch effect */
+button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #26a9e1;
+}
+
+  /* Media queries for responsive design */
+@media (min-width: 768px ) {
+    .scream_font {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    }
+    .scream_logo {
+    margin-top: 0vh;
+    margin-bottom: 5vw;
+    }
+    button {
+    font-size: 18px;
+    padding: 15px 30px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .scream_font {
+    margin-top: -20vh;
+    width: 80%;
+    margin-bottom: -15vh;
+    }
+    .scream_logo {
+    margin-top: -10vh;
+    margin-bottom: 3vw;
+    width: 20%;
+    }
+    button {
+    font-size: 18px;
+    padding: 15px 30px;
+    }
+}
